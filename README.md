@@ -1,3 +1,19 @@
+-> Create a sidebar with Dashboard, Categories, Banks...
+parts were given
+-> Statistical information such as total balance, Invoice type, Last incoming transfer are provided for the Dashboard.
+A chart was created for the amounts in banks and bank accounts. In this chart, each bank account
+How much amount there is can be observed, on the other hand, the total invoice amount for each invoice head can be observed.
+-> Other plugins were made for the CRM project
+-> A form was created for invoices and simple operations such as adding, deleting, updating and listing were performed.
+-> In addition to the page created for expenses, you can group expenses by category and see the total amount of spending for each category.
+and the total number of expenditures were shown in two different graphs.
+-> In the form created for the bank form, for Ziraat, Foundation and İş banks
+The total amount and the last 5 bank transactions are shown below.
+-> Additionally, since there is one-to-many usage in the database, operations are carried out accordingly in comboboxes.
+ Made using groupby
+ -> Finally, the login form was created and directed to the Dashboard page if the username and password match.
+ otherwise error message returned
+
 -> Bir sidebar oluşturarak Dashboard , Kategoriler , Bankalar ...
 kısımları verildi
 -> Dashboard için toplam bakiye , Fatura türü , Gelen Son havale gibi istatistiksel bilgiler verildi.
