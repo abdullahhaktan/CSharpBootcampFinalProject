@@ -89,4 +89,22 @@ The application is structured into several modules covering key aspects of finan
     * Build the solution and run the application (**F5**). The application will start with the `FrmLogin` screen.
 
 
-| ![Genel Görünüm](image_46b845.png) | ![Giriş Formu](image_46bc88.jpg) | ![Grafik Ekranı](image_46bc63.png) | ![Tablolu Ekran](image_46bc45.png) | ![Detay Ekranı](image_46bc25.png) |
+---
+---
+
+## Ekran Fotoğrafları
+
+<img width="589" alt="image" src="https://github.com/user-attachments/assets/3c03e9e4-56d6-405a-9bf4-09878e37abf5" />
+
+ ![image](https://github.com/user-attachments/assets/054418fc-6906-4b66-8164-895a2151e7ed)
+
+![image](https://github.com/user-attachments/assets/07ecb526-fcd1-4c8e-b41d-793ccfc2dfdb)
+
+![image](https://github.com/user-attachments/assets/180e168f-3871-4c95-8392-573895781faa)
+
+![image](https://github.com/user-attachments/assets/cfbc541c-2f83-47ed-91bb-52f04c257b32)
+
+![image](https://github.com/user-attachments/assets/e6f9c1a8-4987-4102-9cb3-ef98d7fc0368)
+![image](https://github.com/user-attachments/assets/9ddb6138-0986-4a4e-bfbd-545ee07652af)
+![image](https://github.com/user-attachments/assets/94497f9e-9044-4627-a028-bb0bf19b17e5)
+
