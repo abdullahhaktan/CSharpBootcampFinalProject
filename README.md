@@ -1,118 +1,89 @@
-# CSharpBootcampFinalProject
+# MyFinancialCrm - Finansal Yönetim Sistemi
 
 [TR]
 
-**C# Bootcamp Kapsamlı Final Projesi: Veritabanı Destekli Yönetim Uygulaması**
+**C# Windows Forms ve Entity Framework ile Geliştirilmiş Finansal Kaynak Yönetimi Uygulaması**
 
 [![C#](https://img.shields.io/badge/Language-C%23-blue.svg)](https://docs.microsoft.com/en-us/dotnet/csharp/)
-[![Design Pattern](https://img.shields.io/badge/Architecture-N--Tier%2FLayered-orange.svg)]()
-[![GitHub repo size](https://img.shields.io/github/repo-size/abdullahhaktan/CSharpBootcampFinalProject)](https://github.com/abdullahhaktan/CSharpBootcampFinalProject)
+[![Windows Forms](https://img.shields.io/badge/Platform-Windows%20Forms-blue.svg)](https://docs.microsoft.com/en-us/dotnet/desktop/winforms/)
+[![Entity Framework](https://img.shields.io/badge/ORM-Entity%20Framework-blueviolet.svg)](https://docs.microsoft.com/en-us/ef/)
+[![SQL Server](https://img.shields.io/badge/Database-SQL%20Server-lightgrey.svg)](https://www.microsoft.com/en-us/sql-server)
 
 ---
 
 ## 💻 Proje Hakkında
 
-Bu proje, bir C# eğitim kampının (Bootcamp) bilgi ve becerilerini ölçmek amacıyla geliştirilmiş **kapsamlı final uygulamasıdır**. Proje, **Nesne Yönelimli Programlama (OOP) prensiplerini**, **katmanlı mimariyi** ve **veri yönetimi yeteneklerini** pratik bir senaryo üzerinde sergilemektedir.
+Bu proje, **C# Windows Forms** platformunda geliştirilmiş, bir işletmenin veya bireyin finansal hareketlerini, banka işlemlerini, faturalarını ve genel giderlerini yönetmesini sağlayan modüler bir **Finansal Yönetim Sistemi**'dir.
+
+Uygulama, veri erişimi için **Entity Framework** kullanır ve kullanıcıya finansal veriler üzerinde tam **CRUD** (Create, Read, Update, Delete) kontrolü sunar.
+
+### ⚙️ Teknik Altyapı
+
+* **Platform:** C# Windows Forms
+* **Veri Erişim Teknolojisi:** Entity Framework (DB Context Adı: `FinancialCrmDbEntities1`)
+* **Veritabanı:** SQL Server
+* **Raporlama:** Windows Forms'un `Chart` bileşenleri ile dinamik grafikler.
 
 ---
 
-## ✨ Temel Özellikler
+## ✨ Ana Özellikler ve Modüller
 
-### Mimari ve Tasarım Prensipleri
-* **Katmanlı Mimari (N-Tier/Layered Architecture):** Sunum (Presentation), İş (Business) ve Veri Erişim (Data Access) katmanları arasında net bir ayrım mevcuttur.
-* **Nesne Yönelimli Programlama (OOP):** Kalıtım, Polimorfizm, Encapsulation gibi temel prensiplerin uygulamaları görülmektedir.
-* **Clean Code (Temiz Kod):** Kodun okunabilirliğini, sürdürülebilirliğini ve test edilebilirliğini sağlamaya odaklanılmıştır.
-
-### İşlevsellik
-* **CRUD Operasyonları:** Temel varlıklar (Ürünler, Müşteriler, Çalışanlar vb.) üzerinde **Ekleme, Listeleme, Güncelleme ve Silme** işlemleri tam olarak uygulanmıştır.
-* **Veritabanı Entegrasyonu:** Verilerin kalıcı olarak saklanması ve yönetilmesi için **SQL Server** veya **MS Access** gibi bir veritabanı ile entegre çalışır.
-* **Kullanıcı Arayüzü:** Yönetim kolaylığı için **Windows Forms (WinForms)** veya **ASP.NET Web Uygulaması** arayüzü kullanılmıştır.
-
----
-
-## 🚀 Nasıl Çalıştırılır?
-
-Projenin çalıştırılması için gerekli .NET Framework veya .NET Core (proje tipine göre) ve bir veritabanı sunucusu gereklidir.
-
-1.  **Projeyi Klonlama:**
-    ```bash
-    git clone [https://github.com/abdullahhaktan/CSharpBootcampFinalProject](https://github.com/abdullahhaktan/CSharpBootcampFinalProject)
-    cd CSharpBootcampFinalProject
-    ```
-
-2.  **Veritabanı Ayarı:**
-    * Projenin veri erişim katmanındaki (örneğin `Data/DataAccess`) **bağlantı dizesini** (`connection string`) kendi yerel veritabanı sunucunuza göre güncelleyin.
-    * Gerekliyse, projeye ait veritabanı şemasını (schema) veritabanı sunucunuzda oluşturun ve varsa **örnek verileri** yükleyin.
-
-3.  **Çözümü Başlatma:**
-    * **Visual Studio** ile `.sln` (Solution) dosyasını açın.
-    * Gerekliyse, tüm **NuGet** paketlerini geri yükleyin.
-    * Ana projeyi **`Startup Project`** olarak ayarlayın ve **F5** tuşu ile uygulamayı çalıştırın.
+| Modül | Form Adı | Ana İşlevler |
+| :--- | :--- | :--- |
+| **Dashboard** | `FrmDashboard` | Toplam bakiye, son işlemler, banka bakiyesi ve fatura dağılımı grafikleri. |
+| **Banka İşlemleri** | `FrmBankProcess` | Banka hareketlerini **ekleme, silme, güncelleme** ve listeleme (BankTitle ile JOIN). |
+| **Gider Yönetimi** | `FrmSpendings` | Giderlerin kategori bazında (Dropdown ile) **CRUD** işlemleri. Giderlerin toplam tutar ve adet grafiklerinin gösterimi. |
+| **Faturalar** | `FrmBilling` | Tekrarlayan faturaların/ödemelerin **CRUD** işlemleri. |
+| **Ayarlar** | `FrmSettings` | Kullanıcı bilgilerini (Ad, Soyad, Şifre) güncelleme. |
 
 ---
 ---
+
+# MyFinancialCrm - Financial Management System
 
 [EN]
 
-# CSharpBootcampFinalProject
-
-**Comprehensive C# Bootcamp Final Project: Database-Backed Management Application**
-
----
-
 ## 💻 About the Project
 
-This project is a **comprehensive final application** developed to measure the knowledge and skills acquired during a C# bootcamp. It showcases the application of **Object-Oriented Programming (OOP) principles**, **layered architecture**, and **data management capabilities** within a practical scenario.
+This is a modular **Financial Management System** developed using **C# Windows Forms**. It is designed to help businesses or individuals manage their financial movements, bank transactions, bills, and general expenditures.
+
+The application leverages **Entity Framework** for simplified data access, providing users with full **CRUD** (Create, Read, Update, Delete) control over their financial data.
+
+### ⚙️ Technical Stack
+
+* **Platform:** C# Windows Forms
+* **Data Access Technology:** Entity Framework (DB Context: `FinancialCrmDbEntities1`)
+* **Database:** SQL Server
+* **Reporting:** Dynamic charts created using Windows Forms' built-in `Chart` components.
 
 ---
 
-## ✨ Core Features
+## ✨ Core Features and Modules
 
-### Architecture and Design Principles
-* **Layered Architecture (N-Tier):** Features a clear separation between Presentation, Business, and Data Access layers.
-* **Object-Oriented Programming (OOP):** Demonstrates the application of fundamental principles like Inheritance, Polymorphism, and Encapsulation.
-* **Clean Code:** Focused on ensuring the code is readable, maintainable, and testable.
+The application is structured into several modules covering key aspects of financial management:
 
-### Functionality
-* **CRUD Operations:** Full implementation of **Create, Read, Update, and Delete** operations on core entities (e.g., Products, Customers, Employees).
-* **Database Integration:** Works with a database like **SQL Server** or **MS Access** for persistent data storage and management.
-* **User Interface:** Uses a **Windows Forms (WinForms)** or **ASP.NET Web Application** interface for management ease.
+| Module | Form Name | Key Functionalities |
+| :--- | :--- | :--- |
+| **Dashboard** | `FrmDashboard` | Displays total balance, last transactions, and dynamic charts for bank balances and bill distribution. |
+| **Bank Operations** | `FrmBankProcess` | **CRUD** operations (Add, Delete, Update, List) for bank transactions, including joining with Bank Title. |
+| **Expense Management** | `FrmSpendings` | **CRUD** operations for expenses, categorized via a dropdown. Shows charts for total expense count and amount per category. |
+| **Billing** | `FrmBilling` | **CRUD** operations for managing recurring bills and payments. |
+| **Settings** | `FrmSettings` | User profile management (Name, Surname, Password update). |
 
 ---
 
 ## 🚀 How to Run
 
-Running the project requires the necessary .NET Framework or .NET Core SDK (depending on the project type) and a database server.
-
-1.  **Cloning the Project:**
+1.  **Clone the Repository:**
     ```bash
     git clone [https://github.com/abdullahhaktan/CSharpBootcampFinalProject](https://github.com/abdullahhaktan/CSharpBootcampFinalProject)
-    cd CSharpBootcampFinalProject
+    cd MyFinancialCrm
     ```
 
-2.  **Database Configuration:**
-    * Update the **connection string** in the project's data access layer (e.g., in `Data/DataAccess`) to point to your local database server.
-    * If necessary, create the required database schema on your server and load any **sample data**.
+2.  **Database Setup (Entity Framework):**
+    * Configure your SQL Server database to match the Entity Framework context (`FinancialCrmDbEntities1`).
+    * Ensure the necessary tables (`Users`, `Banks`, `Bills`, etc.) are present and configured correctly.
 
-3.  **Starting the Solution:**
-    * Open the **`.sln`** (Solution) file with **Visual Studio**.
-    * Restore all **NuGet** packages if required.
-    * Set the main project as the **`Startup Project`** and run the application by pressing **F5**.
-
----
----
-<img width="589" alt="image" src="https://github.com/user-attachments/assets/3c03e9e4-56d6-405a-9bf4-09878e37abf5" />
-
- ![image](https://github.com/user-attachments/assets/054418fc-6906-4b66-8164-895a2151e7ed)
-
-![image](https://github.com/user-attachments/assets/07ecb526-fcd1-4c8e-b41d-793ccfc2dfdb)
-
-![image](https://github.com/user-attachments/assets/180e168f-3871-4c95-8392-573895781faa)
-
-![image](https://github.com/user-attachments/assets/cfbc541c-2f83-47ed-91bb-52f04c257b32)
-
-![image](https://github.com/user-attachments/assets/e6f9c1a8-4987-4102-9cb3-ef98d7fc0368)
-![image](https://github.com/user-attachments/assets/9ddb6138-0986-4a4e-bfbd-545ee07652af)
-![image](https://github.com/user-attachments/assets/94497f9e-9044-4627-a028-bb0bf19b17e5)
-
-
+3.  **Build and Run:**
+    * Open the `.sln` file in Visual Studio.
+    * Build the solution and run the application (**F5**). The application will start with the `FrmLogin` screen.
