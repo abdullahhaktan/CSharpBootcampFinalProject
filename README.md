@@ -87,3 +87,6 @@ The application is structured into several modules covering key aspects of finan
 3.  **Build and Run:**
     * Open the `.sln` file in Visual Studio.
     * Build the solution and run the application (**F5**). The application will start with the `FrmLogin` screen.
+
+
+| ![Genel Görünüm](image_46b845.png) | ![Giriş Formu](image_46bc88.jpg) | ![Grafik Ekranı](image_46bc63.png) | ![Tablolu Ekran](image_46bc45.png) | ![Detay Ekranı](image_46bc25.png) |
